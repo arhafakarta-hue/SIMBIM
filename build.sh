@@ -7,26 +7,26 @@ echo "🔨 Building SIMBIM for Railway..."
 echo "📦 Installing composer dependencies..."
 composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
 
-# Create necessary directories
+# Create necessary directories with absolute paths
 echo "📁 Creating directories..."
-mkdir -p database
-mkdir -p storage/framework/sessions
-mkdir -p storage/framework/views
-mkdir -p storage/framework/cache
-mkdir -p storage/logs
-mkdir -p bootstrap/cache
+mkdir -p /app/database
+mkdir -p /app/storage/framework/sessions
+mkdir -p /app/storage/framework/views
+mkdir -p /app/storage/framework/cache
+mkdir -p /app/storage/logs
+mkdir -p /app/bootstrap/cache
 
 # Create SQLite database file
 echo "💾 Creating database file..."
-touch database/database.sqlite
+touch /app/database/database.sqlite
 
 # Set permissions
 echo "🔐 Setting permissions..."
-chmod -R 775 storage bootstrap/cache database
+chmod -R 775 /app/storage /app/bootstrap/cache /app/database
 
 # Clear caches
 echo "🧹 Clearing caches..."
-php artisan config:clear
-php artisan cache:clear
+php artisan config:clear || true
+php artisan cache:clear || true
 
 echo "✅ Build complete!"
