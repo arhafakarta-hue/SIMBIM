@@ -1,0 +1,18 @@
+SIMBIM Realtime Laravel
+
+Yang sudah ada:
+[✓] Login multi role
+[✓] Admin, dosen, mahasiswa
+[✓] Dashboard sederhana
+[✓] Daftar ruang bimbingan
+[✓] Detail bimbingan
+[✓] Chat dosen dan mahasiswa
+[✓] Realtime WebSocket pakai Laravel Reverb
+[✓] Fallback polling jika Reverb belum aktif
+[✓] SQLite supaya tidak wajib setting MySQL
+[✓] Akun demo otomatis dari seeder
+
+Akun demo:
+Admin      : admin@simbim.test / password
+Dosen      : dosen@simbim.test / password
+Mahasiswa  : mahasiswa@simbim.test / password

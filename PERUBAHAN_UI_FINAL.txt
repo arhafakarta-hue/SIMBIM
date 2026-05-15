@@ -1,0 +1,24 @@
+PERUBAHAN FINAL SIMBIM
+
+1. UI utama diperbarui menjadi gaya modern magenta-silver yang lebih clean dan tidak mencolok.
+2. Layout aplikasi setelah login diubah menjadi sidebar modern dengan menu sesuai role.
+3. Ditambahkan switch Mode Tampilan: Terang dan Malam. Preferensi disimpan di browser via localStorage.
+4. Logo SIMBIM diganti menjadi bentuk brand mark gradient yang lebih rapi.
+5. Halaman Login dan Register dibersihkan dari catatan akun demo/teks yang tidak penting.
+6. Fitur Profile/Akun dihapus dari navigasi dan route supaya tidak muncul lagi.
+7. Menu dibedakan berdasarkan role:
+   - Admin: Dashboard, Monitoring Jadwal, Data Mahasiswa, Data Dosen, Identitas, Progress Studi, Rekomendasi, Riwayat.
+   - Dosen: Dashboard, Obrolan, Jadwal, Data Mahasiswa, Progress Studi, Rekomendasi, Riwayat.
+   - Mahasiswa: Dashboard, Obrolan, Jadwal, Progress Studi, Rekomendasi, Riwayat.
+8. Admin dibuat lebih berbeda dan tidak kosong melalui dashboard admin center, statistik sistem, monitoring jadwal, identitas registrasi, data dosen/mahasiswa, dan progress akademik.
+9. Admin tidak bisa mengakses obrolan/chat bimbingan secara langsung.
+10. Mahasiswa tidak bisa membuka menu Data Mahasiswa secara langsung.
+11. Dosen tidak bisa membuka Data Dosen secara langsung.
+12. UI lama tetap kompatibel dengan fitur-fitur yang sudah ada: realtime chat, jadwal, data mahasiswa/dosen, progress, rekomendasi, riwayat, dan identitas registrasi.
+
+Cara jalanin:
+1. composer install
+2. php artisan migrate
+3. php artisan optimize:clear
+4. php artisan serve --host=0.0.0.0 --port=8000
+5. Terminal kedua: php artisan reverb:start --host=0.0.0.0 --port=8080

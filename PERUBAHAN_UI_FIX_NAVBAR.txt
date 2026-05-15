@@ -1,0 +1,20 @@
+PERUBAHAN UI NAVBAR / THEME SWITCH
+
+1. Toggle mode terang/malam dipindahkan dari sidebar ke topbar kanan.
+   - Sekarang berbentuk switch kecil dengan ikon matahari dan bulan.
+   - Tidak lagi menutupi menu sidebar.
+
+2. Sidebar desktop diperbaiki agar bisa scroll sendiri.
+   - Bagian halaman utama dan sidebar tidak saling mengganggu saat scroll.
+   - Menu sidebar bisa digulir kalau item terlalu banyak.
+
+3. Tombol Keluar dipindahkan rapi ke bagian paling bawah sidebar.
+   - Tidak lagi menumpuk di tengah menu.
+
+4. Logo SIMBIM diganti dari tulisan SB menjadi emblem akademik berbentuk topi/buku.
+   - Masih memakai warna magenta-silver.
+   - Terlihat lebih proper dan tidak sekadar kotak SB.
+
+5. Layout desktop dibuat lebih stabil.
+   - Sidebar fixed secara visual.
+   - Konten utama punya scroll sendiri.

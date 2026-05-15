@@ -1,0 +1,1 @@
+Perbaikan: halaman login dan register sekarang bisa scroll. Penyebab sebelumnya adalah body desktop dibuat overflow:hidden untuk layout dashboard, sehingga halaman auth ikut terkunci. Sekarang body diberi class is-app/is-auth dan overflow hidden hanya berlaku untuk halaman aplikasi setelah login.
