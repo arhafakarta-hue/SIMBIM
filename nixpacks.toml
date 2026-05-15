@@ -1,14 +1,13 @@
-[phases.setup]
-nixPkgs = ["php82", "php82Packages.composer"]
+providers = ["php"]
 
-[phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader"]
+[phases.setup]
+nixPkgs = ["...", "php82Extensions.pdo_sqlite"]
 
 [phases.build]
 cmds = [
-  "php artisan config:cache",
-  "php artisan route:cache",
-  "php artisan view:cache"
+  "mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache storage/logs",
+  "touch database/database.sqlite",
+  "chmod -R 775 storage bootstrap/cache database"
 ]
 
 [start]
